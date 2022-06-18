@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CPU Scheduling Visualizer</title>
+  </head>
+  <body>
+    <h1 class="main-header">CPU Scheduling Visualizer</h1>
+    <h3 class="semi-header">Algorithm:</h3>
+    <div class="FCFS">
+      <h2 class="FCFS-Header">FCFS Scheduling</h2>
+      <p>This algorithm schedule processes depending on their arrival time.</p>
+      <hr />
+      <table id="FCFS-Table" style="width: 100%">
+        <tr>
+          <th>Process</th>
+          <th>Arrival Time</th>
+          <th>Execute Time</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+        </tr>
+      </table>
+      <button class="btn" onclick="insert_row()">+</button>
+      <button class="btn" onclick="Delete_row()">-</button>
+      <button class="btn">Go</button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
